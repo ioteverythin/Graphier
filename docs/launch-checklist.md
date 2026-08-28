@@ -9,10 +9,11 @@ On https://github.com/ioteverythin/Graphier, click the **gear** next to
 "About" (top of the right sidebar) and paste — this cannot be set from a
 PR, only the owner's UI/API:
 
-- [ ] Description:
+- [ ] Description (replace the topics word-list currently sitting in
+      this field — that list belongs in **Topics** below):
 
       ```
-      Obsidian-like notes where the knowledge graph builds itself — no LLM, no cloud, every claim quotes its source sentence.
+      ⚡ Notes that build their own knowledge graph. Write Markdown, drop in PDFs — Graphier extracts typed entities, infers hidden connections with Datalog, flags contradictions between your own documents, and time-travels your vault. No LLM. No cloud. Every claim quotes the sentence it came from.
       ```
 
 - [ ] Topics (comma/Enter separated):
@@ -23,6 +24,10 @@ PR, only the owner's UI/API:
 
 - [ ] Social preview image: upload `docs/graph-view.png`
 - [ ] Enable **Discussions**
+- [ ] Set the **default branch back to `main`** (Settings → General →
+      Default branch). It currently points at the working branch
+      `claude/semantica-repo-evaluation-essnux`, which is routinely
+      force-pushed — visitors and new clones should land on `main`.
 - [ ] Tag `v0.1.0` (the release workflow builds and attaches the wheel)
 - [x] PyPI pending publisher configured (`ioteverythin/Graphier`,
       workflow `release.yml`, environment "(Any)")

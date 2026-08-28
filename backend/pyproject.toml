@@ -1,7 +1,7 @@
 [project]
 name = "graphier"
 version = "0.1.0"
-description = "Obsidian-like notes where the knowledge graph builds itself — no LLM, no cloud, every claim quotes its source sentence"
+description = "Notes that build their own knowledge graph — typed entities, Datalog inference, contradiction alerts, and git time travel from plain Markdown and PDFs. No LLM, no cloud, every claim quotes its source sentence"
 license = { text = "MIT" }
 requires-python = ">=3.10"
 keywords = ["knowledge-graph", "pkm", "note-taking", "local-first", "datalog", "obsidian", "mcp-server", "entity-extraction", "provenance"]
