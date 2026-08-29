@@ -1,7 +1,9 @@
 # Graphier
 
-**An Obsidian-like knowledge workspace where the graph builds itself — no
-LLM, no cloud, and every claim can quote the sentence it came from.**
+**⚡ Notes that build their own knowledge graph. Write Markdown, drop in
+PDFs — Graphier extracts typed entities, infers hidden connections,
+flags contradictions between your own documents, and time-travels your
+vault. No LLM. No cloud. Every claim quotes the sentence it came from.**
 
 [![CI](https://github.com/ioteverythin/Graphier/actions/workflows/ci.yml/badge.svg)](https://github.com/ioteverythin/Graphier/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
