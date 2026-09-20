@@ -3,6 +3,13 @@ name: Release
 on:
   push:
     tags: ["v*"]
+  # Manual release: creates the tag AND the release in one run — for
+  # when a tag can't be pushed directly (e.g. from a restricted session).
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: "Tag to create and release (e.g. v0.1.0)"
+        required: true
 
 jobs:
   build:
@@ -32,6 +39,7 @@ jobs:
       - name: Attach to GitHub release
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ inputs.tag_name || github.ref_name }}
           files: dist/*
           generate_release_notes: true
       - name: Upload dist for PyPI job
